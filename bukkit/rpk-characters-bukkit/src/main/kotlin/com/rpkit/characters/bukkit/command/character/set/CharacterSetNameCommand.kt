@@ -103,7 +103,6 @@ class CharacterSetNameCommand(private val plugin: RPKCharactersBukkit) : RPKComm
                 reloadPlayer(bukkitPlayer, character, plugin.server.onlinePlayers.filter { it.uniqueId != sender.minecraftUUID })
             }
             sender.sendMessage(plugin.messages["character-set-name-valid"])
-            updatedCharacter?.showCharacterCard(sender)
             return@thenApply CommandSuccess
         }
     }
