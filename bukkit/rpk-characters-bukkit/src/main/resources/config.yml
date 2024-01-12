@@ -1,6 +1,6 @@
 characters:
   min-age: 0
-  max-age: 10000
+  max-age: 32767
   defaults:
     name: 'unset'
     gender: null
@@ -35,27 +35,30 @@ characters:
   strict-movement-prevention-when-dead: true
   set-player-display-name: false
   set-player-nameplate: true
-  new-character-cooldown: 604800000
+  new-character-cooldown: 1200
   create-character-on-join: true
 species:
   Human:
     min-age: 0
-    max-age: 130
+    max-age: 32767
   Elf:
     min-age: 0
-    max-age: 2000
+    max-age: 32767
   Dwarf:
     min-age: 0
-    max-age: 1000
+    max-age: 32767
   Orc:
     min-age: 0
-    max-age: 60
+    max-age: 32767
   Half-Elf:
     min-age: 0
-    max-age: 200
+    max-age: 32767
   Half-Orc:
     min-age: 0
-    max-age: 60
+    max-age: 32767
+  #'^[a-zA-Z0-9]+$':  # Use the regular expression as a string key. TODO: Implement when RPK species selection protocol is fully mapped
+  #  min-age: 0
+  #  max-age: 32767
 books:
   change-author-on-sign: true
   author-format: '${character}'
